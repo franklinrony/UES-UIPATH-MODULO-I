@@ -1,0 +1,141 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ejercicio_5" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="561,872" sap2010:WorkflowViewState.IdRef="ejercicio_5_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ejercicio_5" sap:VirtualizedContainerService.HintSize="496,1599" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strOpUsuario" />
+      <Variable x:TypeArguments="x:Int32" Name="intOpUsuario" />
+      <Variable x:TypeArguments="x:Int32" Name="intOpcionCPU" />
+      <Variable x:TypeArguments="x:String" Name="strOpcionCPU" />
+      <Variable x:TypeArguments="x:String" Name="resultado" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Cuadro de diálogo de entrada" sap:VirtualizedContainerService.HintSize="434,239" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Ingrese el numero que represente su opcion para el juego &quot;+vbCrLf+&#xD;&#xA;&quot;1-Piedra &quot;+vbCrLf+&quot;2-Papel &quot;+vbCrLf+&quot;3-Tijera &quot;]" Title="Juego piedra, papel o tijera">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:String">[strOpUsuario]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[intOpUsuario]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">[Integer.Parse(strOpUsuario)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="&#x9;If(intUser=1)&#xD;&#xA;&#x9;&#x9;opcion=&quot;Piedra&quot;&#xD;&#xA;&#x9;ElseIf(intUser=2)&#xD;&#xA;&#x9;&#x9;opcion=&quot;Papel&quot;&#xD;&#xA;&#x9;ElseIf(intUser=3)&#xD;&#xA;&#x9;&#x9;opcion=&quot;Tijera&quot;&#xD;&#xA;&#x9;Else&#xD;&#xA;&#x9;&#x9;opcion=&quot;Opcion no valida&quot;&#xD;&#xA;&#x9;End If&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" DisplayName="Invocar código" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:Int32" x:Key="intUser">
+          <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="intOpUsuario" />
+        </InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="opcion">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strOpUsuario" />
+        </OutArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Usuario eligio opcion &quot;+strOpUsuario]" />
+    <Assign DisplayName="Asignar" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:Int32">[intOpcionCPU]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:Int32">[new Random().Next(1,4)]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="&#x9;If(intCPU=1)&#xD;&#xA;&#x9;&#x9;opcionCPU=&quot;Piedra&quot;&#xD;&#xA;&#x9;ElseIf(intCPU=2)&#xD;&#xA;&#x9;&#x9;opcionCPU=&quot;Papel&quot;&#xD;&#xA;&#x9;ElseIf(intCPU=3)&#xD;&#xA;&#x9;&#x9;opcionCPU=&quot;Tijera&quot;&#xD;&#xA;&#x9;Else&#xD;&#xA;&#x9;&#x9;opcionCPU=&quot;Opcion no valida&quot;&#xD;&#xA;&#x9;End If&#xD;&#xA;" DisplayName="Invocar código" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:Int32" x:Key="intCPU">
+          <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="intOpcionCPU" />
+        </InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="opcionCPU">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strOpcionCPU" />
+        </OutArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[&quot;CPU eligio &quot;+strOpcionCPU]" />
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="If opUsuario=opCPU&#xD;&#xA; resultado=&quot;Empate ¿Jugamos otra?&quot;&#xD;&#xA;ElseIf (opUsuario+1) Mod 3 = opCPU Mod 3&#xD;&#xA;&#x9;resultado=&quot;Gana CPU xd&quot;&#xD;&#xA;Else &#xD;&#xA;&#x9;resultado=&quot;¡Ganaste! Felicidades&quot;&#xD;&#xA;End If" DisplayName="Invocar código" sap:VirtualizedContainerService.HintSize="434,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:Int32" x:Key="opUsuario">
+          <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="intOpUsuario" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:Int32" x:Key="opCPU">
+          <VisualBasicValue x:TypeArguments="x:Int32" ExpressionText="intOpcionCPU" />
+        </InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="resultado">
+          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="resultado" />
+        </OutArgument>
+      </ui:InvokeCode.Arguments>
+    </ui:InvokeCode>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[resultado]" />
+  </Sequence>
+</Activity>

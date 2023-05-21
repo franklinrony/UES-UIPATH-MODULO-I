@@ -1,7 +1,7 @@
 {
   "name": "Ejercicio 1",
   "description": "Proceso en blanco",
-  "main": "Main.xaml",
+  "main": "Ejercicio 1.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.20.1]",
     "UiPath.Mail.Activities": "[1.18.2]",
@@ -48,8 +48,8 @@
   "expressionLanguage": "VisualBasic",
   "entryPoints": [
     {
-      "filePath": "Main.xaml",
-      "uniqueId": "c9c39e82-81b0-495a-994d-5a123f881e0c",
+      "filePath": "Ejercicio 1.xaml",
+      "uniqueId": "17ccaddb-f872-48a1-af1f-67f3103cf491",
       "input": [],
       "output": []
     }

@@ -9,7 +9,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Main.xaml",
+      "Path": "Ejercicio 1.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "iniciales&Sequence_1",
@@ -28,6 +28,20 @@
         "area&Sequence_1",
         "alturaT&Sequence_1",
         "baseT&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ejercicio 5.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "resultado&Sequence_1",
+        "strOpcionCPU&Sequence_1",
+        "intOpcionCPU&Sequence_1",
+        "intOpUsuario&Sequence_1",
+        "strOpUsuario&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
